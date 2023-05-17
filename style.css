@@ -1,0 +1,45 @@
+body{
+    background-color: lightslategrey;
+}
+.card{
+    padding-right: 2rem;
+    transition: 1s;
+    background-color: white;
+
+}
+.card:hover {
+    background-color: black;
+cursor: pointer;
+    z-index: 999;
+    color: white;
+}
+
+@keyframes color-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.card:hover .card-img i {
+    animation: color-animation 1s infinite;
+    transform: scale(0.8);
+
+}
+
+
